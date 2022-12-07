@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+.flagIcon {
+    width: 0.8em;
+    height: 0.8em;
+}
+
 /* Estilos de fundo, background. */
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -34,7 +39,7 @@ a {
     height: 2rem;
     width: 5rem;
     margin: 1rem;
-    margin-left: 80px;
+    margin-left: 10%;
     border: none;
     background-color: rgba(128, 128, 223, 0.3);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -118,6 +123,7 @@ a {
     width: 100%;
     color: rgba(245, 245, 245, 0.5);
     text-align: center;
+    background-color: rgba(71, 84, 104, 0.4);
 }
 
 #footer a {
@@ -126,5 +132,5 @@ a {
 
 #footer a:hover {
     color: rgba(245, 245, 245, 1);
+    text-shadow: 2px 2px 8px black;
 }
-
