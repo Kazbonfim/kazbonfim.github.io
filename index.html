@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./wave.css">
-    <title>Kazbonfim - v3</title>
+    <!-- Script para interações -->
+    <script src="./script.js" defer></script> 
+    <script src="./backgroundMusic.js" defer></script>
+    <title>Kazbonfim - v4!</title>
 </head>
 
 <body>
 
+    <!-- left float things -->
+    <div id="floatContent">
+        <img id="playSound" src="./resources/play.png" alt="Play background music!">
+        <a href="https://github.com/Kazbonfim"><img class="avatar" src="./resources/git.png"
+                alt="My profile on github"></a>
+    </div>
+
     <!-- header -->
     <header id="header" class="animate__animated animate__fadeInLeft">
         <img class="animate__animated animate__pulse cross" src="./resources/cross.png" alt="">
-        <h1>Kazbonfim<span>-v3</span></h1>
+
+        <h1>Kazbonfim<span>-v4!</span></h1>
         <h3>My personal page on github.io</h3>
         <div id="mainMenu">
             <button style="background-color: rgba(222, 0, 41, 0.5);">
@@ -39,11 +50,12 @@
 
     <!-- content -->
     <div>
-        <article id="content">
-            <header class="contentStyle animate__animated animate__fadeInRight">
-                <h2>Texto em Português - BR <img class="flagIcon" src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/br.svg" alt="Brazil"></h2>
+        <article id="content" class="contentStyle animate__animated animate__fadeInRight">
+            <header>
+                <h2>Texto em Português - BR <img class="flagIcon"
+                        src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/br.svg" alt="Brazil"></h2>
                 <br>
-                <em>Olá, prazer, me chamo Lucas. Esse é meu primeiro site feito por mim mesmo - eu sei, é bem simples.
+                <em>Olá, prazer, me chamo Lucas. Seja bem vindo!
                     Usarei este espaço
                     para testar algumas novas ideias; Sou brasileiro nato, e estou aprendendo a desenvolver pequenos
                     softwares por conta,
@@ -54,9 +66,10 @@
             </header>
         </article>
         <!-- Quebra de linha entre os conteúdos -->
-        <article id="content">
-            <header class="contentStyle animate__animated animate__fadeInRight englishContent">
-                <h2>Text in English <img class="flagIcon" src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/us.svg" alt="Brazil"></h2>
+        <article id="content" class="contentStyle animate__animated animate__fadeInRight englishContent">
+            <header>
+                <h2>Text in English <img class="flagIcon"
+                        src="https://cdn.jsdelivr.net/gh/hampusborgos/country-flags@main/svg/us.svg" alt="Brazil"></h2>
                 <br>
                 <em>Hello, pleasure, my name is Lucas. This is my first self-made website - I know, it's pretty simple.
                     I will use this space
@@ -67,11 +80,17 @@
                     to someday specialize in software development to bring my own ideas to life.</em>
             </header>
         </article>
+        <!--  Novos conteúdos vão aqui!-->
+    </div>
+
+    <div id="horizontalColumn">
+        <h1>Por enquanto não existem novos conteúdos 😥</h1>
+        <img src="./resources/floatingMona.gif" alt="">
     </div>
 
     <!-- Footer da página -->
     <footer id="footer">
-        <a href="https://twitter.com/KazBonfim">Design by @Kazbonfim</a>
+        <a href="https://twitter.com/KazBonfim">@Kazbonfim on Twitter🐣</a>
     </footer>
 
     <!-- Background -->
