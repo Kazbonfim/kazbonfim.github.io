@@ -6,8 +6,11 @@ avatar.addEventListener('mouseover', (a) => {
 });
 
 avatar.addEventListener('mouseout', (a) => {
-    avatar.src = './resources/git.png'
-    return
+    setTimeout(() => {
+        avatar.src = './resources/git.png'
+        return
+}
+, 350)
 });
 
 // Script para realizar a mudança na 'horizontalColumn' ao realizar o Scroll.
@@ -17,6 +20,7 @@ addEventListener('load', () => {
     body = document.body;
     html1 = doc.documentElement;
     addEventListener('scroll', () => {
-        document.getElementById('horizontalColumn').style.backgroundColor = html1.scrollTop > 90 ? 'whitesmoke' : '#474c68';
+        document.getElementById('horizontalColumn').style.backgroundColor = html1.scrollTop > 90 ? 'rgba(245, 245, 245, 0.9)' : '#474c68';
+        document.getElementById('footer').style.color = html1.scrollTop > 90 ? 'black' : 'whitesmoke';
     })
 })
