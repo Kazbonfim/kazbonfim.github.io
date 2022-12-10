@@ -8,8 +8,8 @@
 }
 
 #wave-container>.wave {
-    background: rgb(102, 125, 255);
-    border-radius: 43%;
+    background: #7363DE;
+    border-radius: 37%;
     opacity: 0.4;
 
     margin-left: -150px;
@@ -26,34 +26,26 @@
 }
 
 #wave-container>.wave:nth-child(2) {
-    background: rgb(204, 205, 255);
+    background: #8070EB;
     opacity: 0.1;
-
     position: fixed;
-
     animation: wave-animation 30s infinite linear;
 }
 
 #wave-container>.wave:nth-child(3) {
-    background-color: rgb(160, 153, 255);
-
+    background-color: #8D7DF8;
     position: fixed;
-
     animation: wave-animation 20s infinite linear;
 }
 
 #wave-container:after {
     content: "";
-
     display: block;
-
     left: 0;
     top: 0;
     z-index: 9;
-
     height: 100%;
     width: 100%;
-
     transform: translate3d(0, 0, 0);
 }
 
