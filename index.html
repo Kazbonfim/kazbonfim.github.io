@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- Estilos dos ícoes-->
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Estilos dos ícoes-->
     <link rel="stylesheet" href="./style.css"> <!-- Estilo da página -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Animações -->
     <link rel="stylesheet" href="./wave.css">
     <link rel="stylesheet" href="./gimmick.css">
+    <!-- Scripts -->
+    <script src="./backgroundMusic.js" defer></script>
+    <script src="./script.js" defer></script>
     <title>Kazbonfim v5</title>
 </head>
+
 <body>
 
     <!-- Logotipo -->
     <div id="mainDiv">
+        <div>
+            <img id="playSound" class="triangle" src="./resources/play.png" alt="">
+            <a href="https://github.com/Kazbonfim"><img id="avatar" src="./resources/KazBonfim.png" alt=""></a>
+        </div>
+        
         <img id="logoIcon" src="./resources/logoIcon.png" alt="Logo icons">
         <h1 id="logo">Kazbonfim v5</h1>
-        <a href="https://github.com/Kazbonfim"><p id="slogan">Made by @Kazbonfim</p></a>
+        <a href="https://twitter.com/KazBonfim">
+            <p id="slogan">Made by @Kazbonfim</p>
+        </a>
     </div>
 
     <div class="contentFlex" id="contentFlex">
         <!-- Conteúdo -->
         <div class="contentBox">
             <div class="contentBlog">
-                <h2>Lorem Ipsum</h2>
+                <h2>Sobre mim</h2>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odio tenetur doloremque iusto tempore
-                    delectus, pariatur harum necessitatibus porro aperiam molestiae minus expedita odit officiis sed quasi. Cum,
-                    eligendi repellat!</p>
+                <p>Olá, meu nome é Lucas, tenho 24 anos e sou apaixonado por tecnologia. Desde criança, quando ganhei um <b>MegaDrive</b> foi amor á primeira vista, de lá pra cá eu sempre brinquei de colocar meus desenhos nas telas dos computadores, criando pequenos jogos <i>(principalmente de RPGs, que sou fã confesso)</i>.
+                    <br>Quando descobri que criar sites não era tão complexo quanto desenvolver jogos, decidi pôr em prática minha facilidade em aprender certos padrões e minhas habilidades criativas. Hoje estou estudando de forma autônoma, mas pretendo realizar um curso técnico na área, para desenvolver de forma profissional tais conhecimentos - <i>30% HTML, 30% CSS e 40% Javascript!</i>
+                </p>
             </div>
         </div>
-        
+
         <div class="contentBox">
             <div class="contentBlog">
-                <h2>Lorem Ipsum</h2>
+                <h2>About me</h2>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odio tenetur doloremque iusto tempore
-                    delectus, pariatur harum necessitatibus porro aperiam molestiae minus expedita odit officiis sed quasi. Cum,
-                    eligendi repellat!</p>
+                <p>Hello, my name is Lucas, I'm 24 years old and I'm passionate about technology. Since I was a child, when I got a <b>SEGA Genesis</b> it was love at first sight, since then I've always played with putting my drawings on computer screens, creating small games <i>(mainly RPGs, which I'm a confessed fan)</i>.
+                    <br>When I discovered that creating websites was not as complex as developing games, I decided to put my ease in learning
+                    certain patterns and my creative skills to use. Today I'm studying autonomously, but I intend to take a technical course
+                    in the area, to develop such knowledge professionally - <i>30% HTML, 30% CSS and 40% Javascript!</i>
+                </p>
             </div>
         </div>
     </div>
     <!-- Quebra de linha entre conteúdos de apresentação -->
 
     <!-- Área de projetos, com campos flexíveis -->
-        <div class="horizontalWrap">
-            <button name="pink" class="tooltip">Curriculum<span class="tooltiptext">Você pode me conhecer, de forma profissional, clicando aqui</span></button>
-            <button name="red">countDown</button>
-            <button name="green">autoBattler</button>
-        </div>
+    <div class="horizontalWrap">
+        <button name="pink" class="tooltip">Curriculum<span class="tooltiptext">Você pode me conhecer, de forma
+                profissional, clicando aqui</span></button>
+        <button name="red">countDown</button>
+        <button name="green">autoBattler</button>
+    </div>
     <!-- Debug -->
-    
+
     <footer class="footer">
         <p>Design by @Kazbonfim, 2022 ©</p>
     </footer>
@@ -63,4 +81,5 @@
     </div>
 
 </body>
+
 </html>

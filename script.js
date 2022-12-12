@@ -1,18 +1,3 @@
-// Script para realizar a mudança no 'hover' do avatar, á esquerda da página.
-const avatar = document.querySelector('.avatar')
-avatar.addEventListener('mouseover', (a) => {
-    avatar.src = './resources/avatar.png'
-    return
-});
-
-avatar.addEventListener('mouseout', (a) => {
-    setTimeout(() => {
-        avatar.src = './resources/git.png'
-        return
-}
-, 350)
-});
-
 // Script para realizar a mudança na 'horizontalColumn' ao realizar o Scroll.
 let doc, body, html1
 addEventListener('load', () => {

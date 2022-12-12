@@ -2,7 +2,7 @@
 // Thanks to these guys for amazing songs: Qumu, and DjCutman. Follow them on Soundcloud!
 // Script para tocar uma música de fundo.
 
-let playList = ['./resources/homeMenu.mp3', './resources/miiPlaza.mp3', './resources/Qumu.mp3', './resources/Djcutman-FFVII.mp3'];
+let playList = ['./resources/music/homeMenu.mp3', './resources/music/miiPlaza.mp3', './resources/music/Qumu.mp3', './resources/music/Djcutman-FFVII.mp3'];
 let randomMusic = playList[Math.floor(Math.random() * playList.length)];
 console.log('debug>' + randomMusic)
 let audio = new Audio(`${randomMusic}`)
