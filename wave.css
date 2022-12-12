@@ -1,15 +1,16 @@
-/* Original wave effect made by https: //codepen.io/Ephellon, thanks bro'! */
+/* WAVES */
+
 #wave-container {
-    right: 0;
-    position: fixed;
     z-index: -2;
+    left: 0;
+    position: fixed;
     top: 0;
-    transform: rotate(75deg);
+    transform: rotate(80deg);
 }
 
 #wave-container>.wave {
-    background: #7363DE;
-    border-radius: 37%;
+    background: #6088aa;
+    border-radius: 43%;
     opacity: 0.4;
 
     margin-left: -150px;
@@ -22,30 +23,38 @@
     width: 1500px;
     height: 1300px;
 
-    animation: wave-animation 15s infinite linear;
+    animation: wave-animation 7s infinite linear;
 }
 
 #wave-container>.wave:nth-child(2) {
-    background: #8070EB;
+    background: #557da3;
     opacity: 0.1;
+
     position: fixed;
-    animation: wave-animation 30s infinite linear;
+
+    animation: wave-animation 15s infinite linear;
 }
 
 #wave-container>.wave:nth-child(3) {
-    background-color: #8D7DF8;
+    background-color: #2f86d8;
+
     position: fixed;
-    animation: wave-animation 20s infinite linear;
+
+    animation: wave-animation 10s infinite linear;
 }
 
 #wave-container:after {
     content: "";
+
     display: block;
+
     left: 0;
     top: 0;
     z-index: 9;
+
     height: 100%;
     width: 100%;
+
     transform: translate3d(0, 0, 0);
 }
 
