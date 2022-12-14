@@ -9,6 +9,7 @@ addEventListener('load', () => {
     })
 });
 
+// Script para alterar a cor de fundo, conforme o scroll da página.
 let doc1, head, html2
     addEventListener('load', () => {
         doc = document;
@@ -18,4 +19,7 @@ let doc1, head, html2
             document.getElementById('waveSelector').href = html2.scrollTop > 400 ? './blackwave.css' : './wave.css';
         })
     })
+
+
+
 
