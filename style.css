@@ -7,8 +7,10 @@
 
 body {
     overflow-x: hidden;
-    background-color: #0e6cc4;
+    background-color: #0E6CC4; 
+    scroll-behavior: smooth;
     font-family: 'Assistant', Helvetica, sans-serif;
+    transition: 0.5s;
 }
 
 a {
@@ -114,9 +116,52 @@ a {
     border-left: 0.5em solid #0e6cc4;
 }
 
+.contentBox[name="blogSection"] {
+    position: relative;
+    color: whitesmoke;
+    margin-left: 10%;
+    margin-top: 2em;
+    width: 80%;
+    height: 32em;
+    margin-bottom: 5rem;
+}
+
+.contentBox[name="blogSection"]>#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contentBox[name="blogSection"]>#backgroundVideo>video {
+    width: 100%;
+    object-fit: cover;
+    transition: 2s;
+}
+
+@media (max-width: 720px) {
+    .contentBox[name="blogSection"]>#backgroundVideo>video {
+        transition: 0.5s;
+        opacity: 0;
+    }
+}
+
+.contentBlog[name="infoBlog"] { 
+    height: 30em;
+    background-color: rgba(113, 113, 113, 0.45);
+}
+
+.contentBlog[name="quoteClone"] {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
 .horizontalWrap {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-evenly; gap: 0.5em;
     width: 100%;
     height: 5rem;
     margin-top: 2em;
@@ -175,8 +220,6 @@ a {
     width: 10rem;
     height: 5rem;
 }
-
-
 
 .footer {
     position: fixed;

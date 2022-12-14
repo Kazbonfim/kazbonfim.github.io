@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./style.css"> <!-- Estilo da página -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- Animações -->
-    <link rel="stylesheet" href="./wave.css">
+    <link id="waveSelector" rel="stylesheet" href="./wave.css">
     <link rel="stylesheet" href="./gimmick.css">
     <!-- Scripts -->
     <script src="./backgroundMusic.js" defer></script>
@@ -37,7 +37,7 @@
 
     <div class="contentFlex" id="contentFlex">
         <!-- Conteúdo -->
-        <div class="contentBox">
+        <div class="contentBox animate__animated animate__fast animate__fadeIn" >
             <div class="contentBlog">
                 <h2>Sobre mim</h2>
                 <br>
@@ -53,7 +53,7 @@
             </div>
         </div>
 
-        <div class="contentBox">
+        <div class="contentBox animate__animated animate__delay-2s animate__fadeIn">
             <div class="contentBlog">
                 <h2>About me</h2>
                 <br>
@@ -77,10 +77,35 @@
         <a href="./resources/resume.pdf"><button name="pink" class="tooltip">Curriculum<span class="tooltiptext">Você
                     pode me conhecer, de forma
                     profissional, clicando aqui</span></button></a>
-        <a href="https://github.com/Kazbonfim/countDown"><button name="red">countDown</button></a>
-        <a href="https://github.com/Kazbonfim/Auto-Battler"><button name="green">autoBattler</button></a>
+        <a href=""><button name="red">countDown</button></a>
+        <a href="https://github.com/Kazbonfim/countDown"><button name="green">autoBattler</button></a>
     </div>
-    <!-- Debug -->
+    
+    <!-- Blog -->
+    <div class="contentBox" name="blogSection">
+        <!-- Video de background -->
+        <div id="backgroundVideo">
+            <video src="./resources/video/retro.mp4" loop="true" muted="true"
+                autoplay="true"></video>
+        </div>
+
+        <!-- Sessão de novidades dinâmicas -->
+        <div name="infoBlog" class="contentBlog">
+            <h1 style="margin-bottom: 2rem;">Blog</h1>
+            <div name="quoteSection" id="quoteCreate"><!-- Clonar -->
+                <div name="quoteClone" class="contentBlog" style="margin-bottom: 1.5rem;">
+                    <p>No presente momento sou <i>Expert de Interação</i>, trabalhando pra <b>Teleperformance Brasil</b>. Além disso, possuo
+                        outras responsabilidades extracurriculares, e estou totalmente disponível para novas empreitadas ou projetos que
+                        sejam inovadores!
+                        Caso queira entrar em contato, por favor, basta me enviar um e-mail ou me chamar pessoalmente nas rede sociais
+                        😊</p>
+                </div>
+            </div>
+            
+            <!-- Fim da sessão de novidades dinâmicas -->
+
+        </div>
+    </div>
 
     <footer class="footer">
         <p>Best viewed on Desktops | Design by @Kazbonfim, 2022 ©</p>
