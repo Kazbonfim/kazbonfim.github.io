@@ -20,7 +20,7 @@ a {
 /* Estilos do Header da página */
 #mainDiv {
     white-space: nowrap;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     margin-top: 2rem;
     display: flex;
     justify-content: center;
@@ -33,14 +33,14 @@ a {
 
 #logoIcon {
     width: 6rem;
-    margin-right: 30rem;
+    margin-right: 30em;
     top: 1.5em;
     position: absolute;
-    opacity: 0.5;
+    opacity: 0.4;
     z-index: -1;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 760px) {
     #avatar {
         opacity: 0;
     }
@@ -54,7 +54,7 @@ a {
     top: 1rem;
     right: 21%;
     border-radius: 100%;
-    transition: 1s;
+    transition: 0.3s;
 }
 
 #avatar:hover {
@@ -62,7 +62,7 @@ a {
     transform: scale(1.1);
 }
 
-@media (max-width: 720px) {
+@media (max-width: 760px) {
     .triangle {
         opacity: 0;
     }
@@ -74,12 +74,19 @@ a {
     top: 1rem;
     right: 27%;
     border-radius: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .triangle:hover {
     box-shadow: inset 0 0 15px #000000;
     transform: scale(0.9);
+}
+
+@media (max-width: 720px){
+    #slogan p {
+        opacity: 0;
+        display: none;
+    }
 }
 
 #slogan {
@@ -128,7 +135,7 @@ a {
     margin-bottom: 3rem;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 400px) {
     #backgroundVideo > video {
         transition: 0.5s;
         opacity: 0;
@@ -151,6 +158,7 @@ a {
 }
 
 .contentBlog[name="infoBlog"] {
+    overflow: scroll; scroll-behavior: smooth; overflow-x: hidden;
     height: 30em;
     background-color: rgba(113, 113, 113, 0.45);
 }
