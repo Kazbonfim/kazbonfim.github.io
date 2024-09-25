@@ -1,0 +1,58 @@
+/* WAVES */
+
+#wave-container {
+    z-index: -2;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transform: rotate(80deg);
+}
+
+#wave-container>.wave {
+    background: #979A9A;
+    border-radius: 43%;
+    opacity: 0;
+    margin-left: -150px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    left: 10%;
+    position: absolute;
+    top: 3%;
+    width: 1500px;
+    height: 1300px;
+    animation: wave-animation 10s infinite linear;
+}
+
+#wave-container>.wave:nth-child(2) {
+    background: #B3B6B7;
+    opacity: 0.1;
+    position: fixed;
+    animation: wave-animation 15s infinite linear;
+}
+
+#wave-container>.wave:nth-child(3) {
+    background-color: #D0D3D4;
+    position: fixed;
+    animation: wave-animation 10s infinite linear;
+}
+
+#wave-container:after {
+    content: "";
+    display: block;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes wave-animation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

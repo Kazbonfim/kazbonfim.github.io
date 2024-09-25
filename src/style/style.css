@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #0e6cc4;
+  scroll-behavior: smooth;
+  font-family: "Assistant", Helvetica, sans-serif;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Estilos do Header da página */
+#mainDiv {
+  white-space: nowrap;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  color: whitesmoke;
+  font-size: 60px;
+}
+
+#logoIcon {
+  width: 6rem;
+  margin-right: 30em;
+  top: 1.5em;
+  position: absolute;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+#avatar {
+  border: 0.1rem solid rgba(255, 255, 255, 0);
+  position: absolute;
+  width: 5rem;
+  padding: 0.1rem;
+  top: 1rem;
+  right: 17em;
+  border-radius: 100%;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+#avatar:hover {
+  border: 0.1rem solid white;
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  #avatar {
+    border: 0.1rem solid rgba(255, 255, 255, 0);
+    position: absolute;
+    width: 4rem;
+    padding: 0.1rem;
+    top: 1rem;
+    right: 1em; /* Espelhar em .triangle */
+    border-radius: 100%;
+    transition: 0.3s;
+    opacity: 0.5;
+  }
+}
+
+.triangle {
+  position: absolute;
+  width: 2rem;
+  top: 1rem;
+  right: 22rem;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.triangle:hover {
+  box-shadow: inset 0 0 15px #000000;
+  transform: scale(0.9);
+}
+
+@media (max-width: 760px) {
+  .triangle {
+    position: absolute;
+    width: 2rem;
+    top: 1rem;
+    right: 5rem;
+    border-radius: 100%;
+    transition: 0.3s;
+    opacity: 0.5;
+  }
+}
+
+
+#slogan {
+  position: relative;
+  padding: 0.5rem;
+  font-family: "Assistant";
+  text-decoration: none;
+  opacity: 0.5;
+  color: white;
+  transition: 0.5s;
+}
+
+#slogan:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+@media (max-width: 720px) {
+  #slogan p {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Estilos de conteúdos iniciais da página */
+#contentFlex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.contentBox {
+  color: whitesmoke;
+  margin-left: 10%;
+  margin-top: 2em;
+  width: 80%;
+}
+
+.contentBlog {
+  padding: 1rem;
+  background-color: rgba(245, 245, 245, 0.1);
+  border-left: 0.5em solid #0e6cc4;
+}
+
+.contentBox[name="blogSection"] {
+  position: relative;
+  color: whitesmoke;
+  margin-left: 20%;
+  margin-top: 2em;
+  width: 60%;
+  height: 32em;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 400px) {
+  #backgroundVideo > video {
+    transition: 0.5s;
+    opacity: 0;
+  }
+}
+
+#backgroundVideo {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#backgroundVideo > video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentBlog[name="infoBlog"] {
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  height: 30em;
+  background-color: rgba(113, 113, 113, 0.45);
+}
+
+.contentBlog[name="quoteClone"] {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.horizontalWrap {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.2em;
+  width: 100%;
+  height: 5rem;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 0.3rem;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+.horizontalWrap button[name="red"] {
+  color: whitesmoke;
+  font-size: large;
+  border: none;
+  background-color: rgba(14, 108, 196, 0.8);
+  width: 10rem;
+  height: 5rem;
+  transition: 0.5s;
+}
+
+.horizontalWrap button[name="red"]:hover {
+  text-shadow: 6px 1px 11px rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 102, 102, 0.5);
+  width: 10rem;
+  height: 5rem;
+}
+
+.horizontalWrap button[name="pink"] {
+  color: whitesmoke;
+  font-size: large;
+  border: none;
+  background-color: rgba(14, 108, 196, 0.8);
+  width: 10rem;
+  height: 5rem;
+  transition: 0.5s;
+}
+
+.horizontalWrap button[name="pink"]:hover {
+  text-shadow: 6px 1px 11px rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 105, 248, 0.5);
+  width: 10rem;
+  height: 5rem;
+}
+
+.horizontalWrap button[name="green"] {
+  color: whitesmoke;
+  font-size: large;
+  border: none;
+  background-color: rgba(14, 108, 196, 0.8);
+  width: 10rem;
+  height: 5rem;
+  transition: 0.5s;
+}
+
+.horizontalWrap button[name="green"]:hover {
+  text-shadow: 6px 1px 11px rgba(0, 0, 0, 0.8);
+  background-color: rgba(64, 226, 160, 0.3);
+  width: 10rem;
+  height: 5rem;
+}
+
+.footer {
+  position: fixed;
+  padding: 0.3rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.5);
+  opacity: 0.5;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.footer:hover {
+  opacity: 1;
+}
+
+.footer a {
+  color: whitesmoke;
+}
