@@ -13,7 +13,7 @@ export const TextComponent = () => {
         };
 
         // Atualiza o conteúdo a cada 3 segundos
-        const intervalId = setInterval(updateContent, 2000);
+        const intervalId = setInterval(updateContent, 3000);
 
         // Inicializa o conteúdo imediatamente
         updateContent();

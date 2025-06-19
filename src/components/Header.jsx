@@ -32,13 +32,14 @@ export const Header = ({ username }) => {
     }
 
     return (
-        <div className='container text-center mt-3 position-relative'>
+        <div className='container text-center my-5 position-relative'>
             {/* Header */}
-            <h1 className='display-4 text-primary text-shadow'>Kazbonfim v3</h1>
-            <h2 className='display-3'>Olá, como vai você?</h2>
-            <hr />
+            <div>
+                <h1 className='display-3 text-primary text-shadow'>Kazbonfim v4
+                    <span><h4><i>Lucas Bonfim de Jesus</i></h4></span>
+                </h1>
 
-            {/* Avatar */}
+            </div>
             <div
                 className="position-absolute start-0 top-50 translate-middle-y ms-4 hoverEffect"
                 style={{ zIndex: 10 }}

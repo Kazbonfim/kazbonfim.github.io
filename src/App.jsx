@@ -4,6 +4,7 @@ import { Header } from "./components/Header"
 import { HeaderMenu } from "./components/HeaderMenu"
 import { Projects } from "./components/Projects";
 import { TextComponent } from "./components/TextComponent";
+import Cards from "./components/Cards";
 
 
 function App() {
@@ -14,11 +15,10 @@ function App() {
     <>
       <Header username={username} />
       <HeaderMenu/>
-      <TextComponent/>
-      {/* Conteúdo */}
       <About/>
-      <Projects/>
-      {/* Conteúdo */}
+      <Cards/>
+      {/* <TextComponent/> */}
+      {/* <Projects/> */}
       <Footer/>
     </>
   )
