@@ -32,11 +32,11 @@ export const Header = ({ username }) => {
     }
 
     return (
-        <div className='container text-center my-5 position-relative'>
+        <div className='container text-center my-3 position-relative'>
             {/* Header */}
             <div>
-                <h1 className='display-3 text-primary text-shadow'>Kazbonfim v4
-                    <span><h4><i>Lucas Bonfim de Jesus</i></h4></span>
+                <h1 className='display-3 text-primary text-shadow'>Kazbonfim v4.1
+                    <span><h4 className='text-light'><i>Lucas Bonfim de Jesus, Software Developer Jr.</i></h4></span>
                 </h1>
 
             </div>

@@ -1,7 +1,7 @@
 /* WAVES */
 
 #wave-container {
-    z-index: -2;
+    z-index: -1;
     left: 0;
     position: fixed;
     top: 0;
@@ -32,7 +32,7 @@
 
     position: fixed;
 
-    animation: wave-animation 15s infinite linear;
+    animation: wave-animation 25s infinite linear;
 }
 
 #wave-container>.wave:nth-child(3) {
@@ -40,7 +40,7 @@
 
     position: fixed;
 
-    animation: wave-animation 10s infinite linear;
+    animation: wave-animation 20s infinite linear;
 }
 
 #wave-container:after {

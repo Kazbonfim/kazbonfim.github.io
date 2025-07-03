@@ -5,21 +5,24 @@ import { HeaderMenu } from "./components/HeaderMenu"
 import { Projects } from "./components/Projects";
 import { TextComponent } from "./components/TextComponent";
 import Cards from "./components/Cards";
+import { useEffect } from 'react'
+import Inspirations from './components/Inspirations';
 
 
 function App() {
 
-  const username = 'kazbonfim'
+  const username = 'kazbonfim';
 
   return (
     <>
       <Header username={username} />
-      <HeaderMenu/>
-      <About/>
-      <Cards/>
+      <HeaderMenu />
+      <About />
+      <Inspirations/>
+      <Cards />
+      <Footer />
       {/* <TextComponent/> */}
       {/* <Projects/> */}
-      <Footer/>
     </>
   )
 }
