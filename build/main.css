@@ -20,6 +20,10 @@ a:hover {
     
 }
 
+em {
+    color: #00a8ec !important;
+}
+
 .hide-scroll {
     scrollbar-width: none;
     /* Firefox */
@@ -85,4 +89,10 @@ a:hover {
     cursor: pointer;
     transform: scale(1.1);
     filter: brightness(100%);
+}
+
+
+
+ul.uk-accordion {
+    margin: 0px !important;
 }

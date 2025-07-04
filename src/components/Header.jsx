@@ -35,10 +35,7 @@ export const Header = ({ username }) => {
         <div className='container text-center my-3 position-relative'>
             {/* Header */}
             <div>
-                <h1 className='display-3 text-primary text-shadow'>Kazbonfim v4.1
-                    <span><h4 className='text-light'><i>Lucas Bonfim de Jesus, Software Developer Jr.</i></h4></span>
-                </h1>
-
+                <h1 className='display-3 text-primary text-shadow'>Kazbonfim v4.1</h1>
             </div>
             <div
                 className="position-absolute start-0 top-50 translate-middle-y ms-4 hoverEffect"

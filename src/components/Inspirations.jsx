@@ -39,6 +39,12 @@ const inspirations = [
         description: 'Designer de jogos (Metal Gear)',
         bio: 'https://dropsdejogos.uai.com.br/noticias/industria/quem-e-hideo-kojima-o-criador-de-metal-gear-e-death-stranding/'
     },
+    {
+        name: 'Michael Scott',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Steve_Carell_at_the_2010_SAG_Awards.jpg/250px-Steve_Carell_at_the_2010_SAG_Awards.jpg',
+        description: 'Ex-gerente regional da Dundler Mifflin',
+        bio: 'https://theoffice.fandom.com/wiki/Michael_Scott'
+    }
 ]
 
 function Inspirations() {
@@ -79,7 +85,7 @@ function Inspirations() {
 
     return (
         <div className='container mb-3 mt-3'>
-            <h1 className='text-center text-light'>Inspirações</h1>
+            <h1 className='text-start text-light'>Inspirações</h1>
             <div
                 ref={sliderRef}
                 className="d-flex gap-3 overflow-auto hide-scroll"
