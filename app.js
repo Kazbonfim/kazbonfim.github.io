@@ -6,10 +6,18 @@ import fastifyStatic from '@fastify/static'
 import path from 'path'
 import { fileURLToPath } from 'url'
 import axios from 'axios'
+import cors from '@fastify/cors'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const app = Fastify()
 const PORT = process.env.PORT || 8080
+
+await app.register(cors, {
+    origin: true,
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    preflight: true,
+})
 
 app.register(fastifyStatic, {
     root: path.join(__dirname, 'build'),
@@ -34,6 +42,7 @@ app.post('/api/github-graphql', async (request, reply) => {
         return reply.status(500).send({ error: 'Erro interno no servidor' })
     }
 })
+
 
 app.listen({ port: PORT, host: '0.0.0.0' }, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}/`)

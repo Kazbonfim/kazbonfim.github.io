@@ -104,7 +104,7 @@ function Inspirations() {
                 {inspirations.map((person, index) => (
                     <div
                         key={index}
-                        className="uk-card uk-card-secondary uk-width-small"
+                        className="shadow uk-card uk-card-secondary uk-width-small"
                         style={{
                             minWidth: '200px',
                             maxWidth: '200px',

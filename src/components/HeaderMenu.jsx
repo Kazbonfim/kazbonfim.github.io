@@ -7,7 +7,7 @@ export const HeaderMenu = () => {
     }
 
     return (
-        <div className='container text-center mt-3 position-relative'>
+        <div className='shadow container text-center mt-3 position-relative'>
             {/* Botões do Header */}
             <div className='row g-2 justify-content-center'>
                 <div className='col-12 col-sm-6 col-md-3'>
