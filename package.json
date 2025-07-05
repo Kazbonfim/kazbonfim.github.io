@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://kazbonfim.github.io",
   "scripts": {
-    "start": "node app.js",
+    "start": "npm run build && node app.js",
     "dev": "vite",
     "dev2": "nodemon app.js",
     "build": "vite build",
